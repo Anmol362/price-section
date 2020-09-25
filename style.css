@@ -1,0 +1,129 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.main
+{
+	width: 100%;
+	height: 80vh;
+	align-items: center;
+	justify-content: center;
+}
+.container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+	margin: auto;
+}
+.container .card
+{
+	background: #95A5A6;
+	width: 250px;
+	height: 345px;
+	margin: 19px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	font-family: 'Ubuntu', sans-serif;
+	transition: all 0.5s ease;
+	box-shadow: 0 5px 8px 1px;
+	color: #fff;
+}
+.container .card:nth-child(2)
+{
+	transform: scale(1.2);
+}
+@media screen and (max-width:900px)
+{
+	.container .card:nth-child(2)
+	{
+		transform: scale(1);
+	}
+
+}
+.container .card:before
+{
+	content: '';
+	height: 55%;
+	width: 100%;
+	left: 0;
+	top: -35px;
+	background: #A569BD;
+	position: absolute;
+	opacity: 0.9;
+	transform: skewY(13deg);
+}
+.container .card:nth-child(2):before
+{
+	background: #E80F2F;
+}
+.container .card:nth-child(3):before
+{
+	background: #2471A3;
+}
+.container .card ul
+{
+	display: block;
+	list-style: none;
+	margin-left: -40px;
+	margin-top: 120px;
+}
+.container .card .circle
+{
+	clip-path: circle(45px at center);
+	opacity: 0.9;
+	position: absolute;
+	top: 13%;
+	height: 100px;
+	width: 100%;
+	z-index: 4;
+	padding-top: 13px;
+	background: #DB71F5;
+}
+.container .card:nth-child(2) .circle
+{
+	background: #EF5274;
+}
+.container .card:nth-child(3) .circle
+{
+	background: #57E5EE;
+}
+.container .card button
+{
+	width: 100%;
+	height: 40px;
+	margin-top: 30px;
+	padding: 5px;
+	border-radius: 10px;
+	background: #A569BD;
+	outline: none;
+	border: none;
+	font-size: 17px;
+	color: #fff;
+ 
+}
+.container .card:nth-child(2) button
+{
+	background: #E80F2F;
+}
+.container .card:nth-child(3) button
+{
+	background: #2471A3;
+}
+.head
+{
+	position: relative;
+	z-index: 3;
+	text-align: center;
+}
+.main h1
+{
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+}
